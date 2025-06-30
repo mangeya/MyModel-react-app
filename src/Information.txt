@@ -1,0 +1,49 @@
+META: 
+
+
+Project Overview
+
+Type: React-based User Profile Dashboard/Card Component
+Architecture: Single-page React component with TypeScript
+
+Technical Stack
+
+Framework: React 17 with TypeScript
+Build Tool: Vite
+Styling: Inline CSS-in-JS (React.CSSProperties)
+Icons: Lucide React icon library
+Development Server: Local development on http://localhost:5173/
+
+Key Features
+
+Default user avatar with upload functionality
+User info display (Name, Age, Location)
+FileReader API for image processing
+Collapsible "Relevant Topics" section
+Collapsible "Relevant Events" section
+
+Data Structure
+
+User Data: Name, Age, Location
+Topics: Title, description, top words array
+Events: Event name, date, location, description
+Sample Data: Includes 3 topics (Technology, Arts, Finance) and 6 events
+
+why VITE?
+
+- high quality pluggins
+- speed
+- works with modern browsers
+.tsx .jsx
+
+
+I structured it with a clear hierarchy—profile details, collapsible topics, and events sections—
+JSX for layout and inline styles for a modern design with gradients and shadows
+React’s useState hook to handle the profile image upload and section expansions
+TypeScript interfaces enforcing data consistency, aligning with a scalable, user-friendly design.
+
+
+
+Type Definitions: UserData and UserStatCardProps interfaces define data structure and props.
+Main Component: UserStatCard uses useState for state (image, section visibility), handles events (image upload), and renders JSX with inline styles.
+Styling: styles object provides CSS-like properties.
